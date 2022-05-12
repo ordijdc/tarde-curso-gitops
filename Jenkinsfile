@@ -11,7 +11,7 @@ pipeline {
 	  stage('Efimero') {
 		agent { label 'docker-agent' }
             steps {
-                ls -ltr /
+                sh 'ls -ltr /'
             }
         }
     }
